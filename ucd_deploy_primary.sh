@@ -60,6 +60,7 @@ if [[ ! -f /tmp/udclient.zip ]]; then
 cd /tmp
 wget --no-check-certificate  $UCD_SERVER_URL/tools/udclient.zip
 fi
+cd /tmp
 unzip -o /tmp/udclient.zip
 
 JRE_FOLDER=$(find /usr -type d -name jre|head -1)
